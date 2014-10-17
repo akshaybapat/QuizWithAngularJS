@@ -1,0 +1,40 @@
+﻿<!-- form-payment.html -->
+
+
+<div style="z-index:9;">
+
+    <div class="text-center">
+        <span class="glyphicon glyphicon-heart"></span>
+      
+        <h3>Here are your Results!</h3>
+
+        <details>
+            <summary style="color:aquamarine">Quantitative Score</summary>
+            <ul>
+                <li><strong>Number of Questions Answered: </strong>{{formData.qanswered}}</li>
+                <li><strong>Number of Correct Answers: </strong>{{formData.qcorrect}}</li>
+                <li><strong>Score: </strong>{{formData.qscore}}</li>
+            </ul>
+        </details> 
+
+        <details>
+            <summary style="color:aquamarine">Verbal Score</summary>
+            <ul>
+                <li><strong>Number of Questions Answered: </strong>{{formData.vanswered}}</li>
+                <li><strong>Number of Correct Answers: </strong>{{formData.vcorrect}}</li>
+                <li><strong>Score: </strong>{{formData.vscore}}</li>
+            </ul>
+        </details>
+
+        <details>
+            <summary style="color:aquamarine">Audio/Video Score</summary>
+            <ul>
+                <li><strong>Number of Questions Answered: </strong>{{formData.manswered}}</li>
+                <li><strong>Number of Correct Answers: </strong>{{formData.mcorrect}}</li>
+                <li><strong>Score: </strong>{{formData.mscore}}</li>
+            </ul>
+        </details>
+
+            <button type="submit" class="btn btn-danger">Submit</button>
+</div>
+</div>

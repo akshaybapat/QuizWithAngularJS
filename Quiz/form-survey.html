@@ -1,0 +1,41 @@
+﻿<!-- form-survey.html -->
+
+<div style="z-index:8;" class="text-center">
+    <header class="form-group"><h3>Survey</h3></header>
+    <div class="form-group">
+        <p class="form-group"> Please provide your comments on the quiz in the section below:</p>
+        <textarea class="form-control" rows="4" cols="84" style="color:black"></textarea>
+    </div>
+    <label>Select The Test Area Location</label>
+    <div class="form-group">
+        City:
+        <input list="area" style="color:black">
+        <datalist id="area" >
+            <option value="San Jose">
+            <option value="Mountain View">
+            <option value="Cupertino">
+            <option value="San Francisco">
+            <option value="Palo Alto">
+        </datalist> 
+        </div>
+    
+
+    <div class="form-group">
+    Room#:
+    <input list="room" style="color:black">
+    <datalist id="room">
+        <option value="Room 337">
+        <option value="Room 210">
+        <option value="Room 410">
+        <option value="Room 110">
+    </datalist>
+    </div>
+    </div>
+
+    <div class="form-group row">
+        <div class="col-xs-6 col-xs-offset-3" ng-click="calculateResult()">
+            <a ui-sref="form.summary" class="btn btn-block btn-danger">
+                Submit <span class="glyphicon glyphicon-circle-arrow-right"></span>
+            </a>
+        </div>
+    </div>

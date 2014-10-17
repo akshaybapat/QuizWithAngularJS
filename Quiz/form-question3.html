@@ -1,0 +1,55 @@
+﻿<!-- form-question3.html -->
+
+<div style="z-index:6;" class="text-center">
+
+    <header class="form-group"><h3>Question 3</h3></header>
+    <p class="form-group">As per the latest Twitter news, complete the article snippet given by selecting appropriate choices for the blanks</p>
+
+    <div class="form-group">
+        <blockquote>
+            Twitter wants more cash. The company annnouced two $ <mark> {{formData.q3a}} </mark> million debt offerings in a filling today, each with a potential $100 increase provided the sales are oversubscribed. Assuming the full tip, including the $100 million boosters,  <mark> {{formData.q3b}} </mark>  will raise up to $1.5 billion with the two offerings.
+        </blockquote>
+        <sub> Source: <a>http://techcrunch.com/2014/09/10/twitter-to-raise-up-to-1-5b-in-debt-offering/</a> </sub>
+    </div>
+
+    <div class="form-group">
+        <div class="form-group radio">
+            <data value="a">
+                <label>
+                    <input class="form-group" type="radio" ng-model="formData.q3a" value=" 650 " />
+                    $650,&nbsp;
+                    <input class="form-group" type="radio" ng-model="formData.q3b" value=" LinkedIn " />
+                    LinkedIn
+                </label>
+            </data>
+        </div>
+        <div class=" form-group radio">
+            <data value="b">
+                <label>
+                    <input class="form-group" type="radio" ng-model="formData.q3a" value=" 550 " />
+                    $550,&nbsp;
+                    <input class="form-group" type="radio" ng-model="formData.q3b" value=" Google " />
+                    Google
+                </label>
+            </data>
+        </div>
+        <div class=" form-group radio">
+            <data value="c">
+                <label>
+                    <input class="form-group" type="radio" ng-model="formData.q3a" value=" 650 " />
+                    $650,&nbsp;
+                    <input class="form-group" type="radio" ng-model="formData.q3b" value=" Facebook " />
+                    Facebook
+                </label>
+            </data>
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <div class="col-xs-6 col-xs-offset-3">
+            <a ui-sref="form.question4" class="btn btn-block btn-info">
+                Next Section <span class="glyphicon glyphicon-circle-arrow-right"></span>
+            </a>
+        </div>
+    </div>
+</div>

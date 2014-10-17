@@ -1,0 +1,49 @@
+﻿<!-- form-question1.html -->
+<div style="z-index:4;" >
+    <div class="text-center">
+        <header class="form-group"><h3>Question 1</h3></header>
+        <p class="form-group">Given points (x1,y1) and (x2,y2) select the formula to find the equation of the given line.</p>
+    </div>
+        <div class="form-group" style="float:left;margin-left:3em;">
+            <img class="form-group" src="QuantFigure.PNG" />
+        </div>
+
+        <div style="float:none;margin-left:30em;">
+            <div class="form-group">
+                <div class="form-group">
+                    <label>
+                        <input type="radio" ng-model="formData.q1" value="a">
+                        <math> <mi>y</mi><mo>=</mo><mi>m</mi><mi>x</mi><mo>+</mo><mi>c</mi> </math>
+
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="radio" ng-model="formData.q1" value="b">
+                        <math><msup> <mrow> <mo>(</mo> <mi>x</mi> <mo>&#x2212;</mo> <mi>h</mi> <mo>)</mo> </mrow> <mrow> <mn>2</mn> </mrow> </msup>  <mo>+</mo> <msup> <mrow> <mo>(</mo> <mi>y</mi> <mo>&#x2212;</mo> <mi>k</mi> <mo>)</mo> </mrow> <mrow> <mn>2</mn> </mrow> </msup> <mo>=</mo><msup><mi>r</mi><mn>2</mn></msup></math>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="radio" ng-model="formData.q1" value="c">
+                        <math> <mi>y</mi><mo>-</mo><msub><mi>y</mi><mi>1</mi></msub>  <mo>=</mo> <mi>m</mi> <mo>(</mo> <mi>x</mi> <mo>&#x2212;</mo> <msub><mi>x</mi><mi>1</mi></msub> <mo>)</mo>   </math>
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>
+                    <input type="radio" ng-model="formData.q1" value="d">
+                    <math> <mi>y</mi><mo>-</mo><msub><mi>y</mi><mi>2</mi></msub>  <mo>=</mo> <mfrac> <mrow>  <msub><mi>y</mi><mi>2</mi></msub>&#x2212;</mo><msub><mi>y</mi><mi>1</mi></msub> </mrow>   <mrow>  <msub><mi>x</mi><mi>2</mi></msub><mo>-</mo><msub><mi>x</mi><mi>1</mi></msub> </mrow>  </mfrac>     <mo>(</mo> <mi>x</mi> <mo>&#x2212;</mo> <msub><mi>x</mi><mi>2</mi></msub> <mo>)</mo>   </math>
+                </label>
+            </div>
+
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-xs-6 col-xs-offset-3">
+            <a ui-sref="form.question2" class="btn btn-block btn-info" ng-click="">
+                Next Section <span class="glyphicon glyphicon-circle-arrow-right"></span>
+            </a>
+        </div>
+    </div>
+</div>
